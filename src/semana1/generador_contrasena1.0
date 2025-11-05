@@ -1,0 +1,32 @@
+Algoritmo Generador_contrasena
+    Escribir "Bienvenido al generador de contraseña"
+    Escribir "Longitud de la contraseña: " 
+    Leer longitud_contrasena
+	
+    // Definimos los conjuntos de caracteres como cadenas de texto
+    letras <- "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    numeros <- "0123456789"
+    simbolos <- "!@#$%^&*()_+=-[]{}|:;<>,.?"
+    
+    // Combinamos todos los caracteres disponibles en una sola cadena
+    combinado <- letras + numeros + simbolos
+    
+    contrasena_final <- "" // Inicializamos la contraseña vacía
+
+    // Usamos un bucle PARA que se repita la longitud deseada de veces
+    Para i <- 1 Hasta longitud_contrasena Con Paso 1 Hacer
+        // Calcular un índice aleatorio dentro de la longitud de la cadena 'combinado'
+        // En PSeInt, Azar(N) devuelve un número entre 0 y N-1
+        indice_aleatorio <- Azar(Longitud(combinado)) 
+        
+        // Extraemos el caracter en ese índice aleatorio y lo añadimos a la contraseña final
+        // Subcadena(cadena, inicio, fin)
+        caracter_aleatorio <- Subcadena(combinado, indice_aleatorio, indice_aleatorio)
+        
+        contrasena_final <- contrasena_final + caracter_aleatorio
+    Fin Para
+    
+    Escribir ""
+    Escribir "La contraseña generada es: ", contrasena_final
+    
+FinAlgoritmo
