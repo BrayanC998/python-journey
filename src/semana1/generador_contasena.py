@@ -3,7 +3,6 @@ import string
 import os
 from datetime import datetime
 
-
 def contrasena_segura(longitud):
 
     letras = string.ascii_letters
@@ -37,6 +36,7 @@ while True:
         
     except ValueError:
         print("Error: debes escribir un número válido: ")
+        
     
 # Ruta absoluta a la carpeta 'semana1'
 ruta_carpeta = os.path.dirname(__file__) #abre carpeta donde esta el archivo
@@ -47,3 +47,4 @@ with open(ruta_archivo, "a") as file:
     file.write(f"{fecha_hora} - {contrasena_generada}  \n")
 
 print("Contraseña Guardada en passwords.txt")  
+    
