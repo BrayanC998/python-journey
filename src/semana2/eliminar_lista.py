@@ -14,6 +14,7 @@ print("Frutas actualizadas", frutas)
 # Eliminar una fruta
 while True:
     try:
+
         eliminar = input("Que fruta deseas eliminar: ")
         if eliminar in frutas:
             frutas.remove(eliminar)
