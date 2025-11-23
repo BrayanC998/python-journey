@@ -19,9 +19,9 @@ print("Bienvenido al clasificador de temperatura 🌡️")
 while True:
     try:
         grados_temperatura = float(input("Ingresar la temperatura del dia de hoy:🌡️  "))
-        resultado_definicion_ = clasificar_temperatura(grados_temperatura)
+        resultado_definicion_temperatura = clasificar_temperatura(grados_temperatura)
         # secambia variable temperatura por grados_temperatura para leerla variable de ingreso tambien.
-        print(resultado_definicion_)
+        print(resultado_definicion_temperatura)
         break
     except ValueError:
         print("Ingresar el valor correcto")
