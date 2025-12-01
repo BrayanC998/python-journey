@@ -15,7 +15,7 @@ def clasificar_temperatura(
 
 
 # Codigo principal para imprimir la logica de la temperatura.
-print("Bienvenido al clasificador de temperatura 🌡️")
+print("Bienvenido al clasificador de temperatura🌡️ ")
 while True:
     try:
         grados_temperatura = float(input("Ingresar la temperatura del dia de hoy:🌡️  "))
