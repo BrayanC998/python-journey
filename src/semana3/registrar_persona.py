@@ -9,7 +9,7 @@ def registrar_persona():
         "ciudad" : ciudad
         }
     return diccionario
-    
+
 personas = []
 while True:
     print("Registro de Personas")
@@ -75,3 +75,6 @@ while True:
         break
     else:
         print("❌ Opción no válida. Intenta de nuevo.")
+        
+        
+
